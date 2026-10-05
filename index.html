@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informationstechnik Würfl — IT-Dienstleistungen, Open Source &amp; Softwareentwicklung</title>
+  <meta name="description" content="Informationstechnik Würfl: IT-Beratung, Open-Source-Migration, Virtualisierung, Softwareentwicklung, IT-Sicherheit und Schulungen. Lizenzkosten senken – pragmatisch und ideologiefrei.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Informationstechnik Würfl – zum Seitenanfang">
+        <svg class="brand__mark" viewBox="0 0 100 106" role="img" aria-label="WÜRFL Logo: isometrischer Würfel">
+          <path class="cube__face cube__face--top" d="M50 8 88 28 50 48 12 28Z"/>
+          <path class="cube__face cube__face--left" d="M50 48 12 28 12 68 50 88Z"/>
+          <path class="cube__face cube__face--right" d="M50 48 88 28 88 68 50 88Z"/>
+          <path class="cube__line" d="M50 8 88 28 88 68 50 88 12 68 12 28Z M50 48V88 M12 28 50 48 88 28"/>
+          <circle class="cube__dot" cx="50" cy="8" r="3.2"/>
+          <circle class="cube__dot" cx="88" cy="28" r="3.2"/>
+          <circle class="cube__dot" cx="50" cy="48" r="3.2"/>
+        </svg>
+        <span class="brand__text">WÜRFL<small>Informationstechnik</small></span>
+      </a>
+
+      <nav class="nav__links" id="nav-links" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#vorgehen">Vorgehen</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a class="btn btn--primary btn--sm" href="#kontakt">Kontakt</a>
+      </nav>
+
+      <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="reveal">
+          <p class="eyebrow">Informationstechnik · Schmalkalden</p>
+          <h1>IT-Infrastruktur, die <span class="hl">Lizenzkosten&nbsp;senkt</span>.</h1>
+          <p class="lead">
+            Wir kombinieren Open Source und proprietäre Software pragmatisch –
+            auf Ihre Geschäftsprozesse zugeschnitten. Beratung, Entwicklung,
+            Betrieb und Schulung aus einer Hand.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#kontakt">
+              Projekt anfragen
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#leistungen">Leistungen entdecken</a>
+          </div>
+          <ul class="hero__facts">
+            <li>
+              <strong>24/7</strong>
+              <em>Support &amp; Wartung</em>
+            </li>
+            <li>
+              <strong>Linux</strong>
+              <em>Know-how seit Kernel 2.0</em>
+            </li>
+            <li>
+              <strong>Neutral</strong>
+              <em>Open Source + proprietär</em>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__art reveal" aria-hidden="true">
+          <svg class="cube" viewBox="0 0 100 106">
+            <path class="cube__face cube__face--top" d="M50 8 88 28 50 48 12 28Z"/>
+            <path class="cube__face cube__face--left" d="M50 48 12 28 12 68 50 88Z"/>
+            <path class="cube__face cube__face--right" d="M50 48 88 28 88 68 50 88Z"/>
+            <path class="cube__line" d="M50 8 88 28 88 68 50 88 12 68 12 28Z M50 48V88 M12 28 50 48 88 28"/>
+            <circle class="cube__dot" cx="50" cy="8" r="3.2"/>
+            <circle class="cube__dot" cx="88" cy="28" r="3.2"/>
+            <circle class="cube__dot" cx="50" cy="48" r="3.2"/>
+            <circle class="cube__dot" cx="12" cy="28" r="3.2"/>
+            <circle class="cube__dot" cx="88" cy="68" r="3.2"/>
+            <circle class="cube__dot" cx="50" cy="88" r="3.2"/>
+            <circle class="cube__dot" cx="12" cy="68" r="3.2"/>
+          </svg>
+          <span class="chip chip--1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9Z"/><path d="M12 12 3 7.5M12 12l9-4.5M12 12v9"/></svg>
+            Open Source
+          </span>
+          <span class="chip chip--2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 1 0 0-9h-1.8A7 7 0 1 0 4 14.9"/></svg>
+            Virtualisierung
+          </span>
+          <span class="chip chip--3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6Z"/><path d="M9.5 12l2 2 3.5-4"/></svg>
+            Sicherheit
+          </span>
+          <span class="chip chip--4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 5l-3 14"/></svg>
+            Entwicklung
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Leistungen ===== -->
+    <section class="section section--tint" id="leistungen">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Leistungen</p>
+          <h2>Sechs Bausteine, ein Ziel: eine effiziente IT.</h2>
+          <p>Vom Lizenzkosten-Check bis zur individuellen Software – jedes Feld mit ingenieurmäßigem Anspruch betrieben.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/>
+              </svg>
+            </div>
+            <h3>IT-Beratung &amp; Controlling</h3>
+            <p>Strukturierter Blick auf Ihre IT-Landschaft: Wir analysieren Lizenzkosten, planen Infrastrukturen und steuern Hardware- und Software-Rollouts – anbieterunabhängig und mit messbarem Ziel: Effizienz.</p>
+            <p class="card__hint">Analyse · Planung · Rollout</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3 3 7.5v9L12 21l9-4.5v-9Z"/><path d="M12 12 3 7.5M12 12l9-4.5M12 12v9"/>
+              </svg>
+            </div>
+            <h3>Open-Source-Migration</h3>
+            <p>Vom Konzept zur Umsetzung: Wir ersetzen lizenzgebundene Anwendungen durch stabile Open-Source-Alternativen – Linux, Groupware, Office – und kombinieren Windows und Linux dort sinnvoll, wo es passt.</p>
+            <p class="card__hint">Linux · Groupware · Office</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/>
+                <path d="M7 7.5h.01M7 16.5h.01"/>
+              </svg>
+            </div>
+            <h3>Virtualisierung &amp; Server-Konsolidierung</h3>
+            <p>Physische Server werden zu virtuellen Maschinen: weniger Hardware, weniger Strom, mehr Ausfallsicherheit. Serverkonsolidierung senkt Ihre Betriebskosten – spürbar und messbar.</p>
+            <p class="card__hint">KVM · VMware · Cloud-Ready</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 9 4 12l4 3M16 9l4 3-4 3M13.5 5l-3 14"/>
+              </svg>
+            </div>
+            <h3>Softwareentwicklung</h3>
+            <p>Individuelle Software für Ihre Geschäftsprozesse – von E-Commerce-Lösungen (Magento) über Web-Anwendungen bis hin zu mobilen Endgeräten. Entwicklung in PHP, Java und C/C++.</p>
+            <p class="card__hint">PHP · Java · C/C++</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6Z"/><path d="M9.5 12l2 2 3.5-4"/>
+              </svg>
+            </div>
+            <h3>IT-Sicherheit</h3>
+            <p>Prüfung auf Schwachstellen: SQL-Injection, Cross-Site-Scripting und Firewall-Analysen. Damit Ihre Systeme sicher bleiben – nicht nur am Tag der Prüfung.</p>
+            <p class="card__hint">Pentest · Firewall · Monitoring</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 9.5 12 4 2 9.5l10 5.5 10-5.5Z"/><path d="M6 12v4.5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5V12"/><path d="M22 9.5V15"/>
+              </svg>
+            </div>
+            <h3>Schulungen</h3>
+            <p>Praxisnahe Schulungen zu den betreuten Systemen – in Ihrem Haus oder bei uns. Damit Ihre Teams die neuen Lösungen vom ersten Tag an produktiv und sicher nutzen.</p>
+            <p class="card__hint">Inhouse · bei uns · Remote</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Vorgehen ===== -->
+    <section class="section" id="vorgehen">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Vorgehen</p>
+          <h2>In drei Schritten zum Ziel.</h2>
+          <p>Klarer Prozess, klare Zahlen. Jede Empfehlung begründet – jede Ersparnis nachvollziehbar.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <p class="step__num">01</p>
+            <h3>Analyse</h3>
+            <p>Wir verschaffen uns einen neutralen Überblick über Ihre bestehende IT: Kosten, Lizenzen, Risiken und Potenziale – dokumentiert und nachvollziehbar.</p>
+          </article>
+          <article class="step reveal">
+            <p class="step__num">02</p>
+            <h3>Konzept</h3>
+            <p>Daraus entsteht ein konkreter Plan: Open Source dort, wo es sich rechnet, proprietäre Lösungen, wo sie besser passen. Inklusive Zeitplan und Budget.</p>
+          </article>
+          <article class="step reveal">
+            <p class="step__num">03</p>
+            <h3>Umsetzung &amp; Betrieb</h3>
+            <p>Wir migrieren, entwickeln und übernehmen die Wartung – inklusive 24/7-Support und laufenden Schulungen Ihrer Teams.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Über uns ===== -->
+    <section class="section section--wash" id="ueber-uns">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="eyebrow">Über uns</p>
+            <h2>Ingenieurmäßiges Denken statt Ideologie.</h2>
+            <p style="margin-top:1.3rem">
+              Informationstechnik Würfl ist ein junges, aber erfahrenes Unternehmen.
+              Inhaber Wolfgang Würfl, Diplom-Wirtschaftsinformatiker (FH), begleitet
+              Unix und Linux seit Kernel 2.0 – und verbindet tiefes Systemwissen mit
+              betriebswirtschaftlichem Blick.
+            </p>
+            <p>
+              Lizenzkosten sind ein nicht unerheblicher Teil jedes IT-Budgets.
+              Gleich unsinnig sind zwei Extreme: alle Anwendungen durch Open Source
+              zu ersetzen – oder blind auf proprietäre Lizenzen zu setzen.
+              Unser Ansatz ist neutral und ideologiefrei: der beste Mix aus beiden
+              Welten, konsequent auf Kosteneinsparung und Effizienz geprüft.
+            </p>
+            <p>
+              Unsere Stärken sind <strong>Flexibilität, Dynamik und Unabhängigkeit</strong> –
+              kurze Wege, direkte Ansprechpartner und Lösungen, die zu Ihrem
+              Unternehmen passen. Nicht umgekehrt.
+            </p>
+          </div>
+
+          <aside class="about__card reveal" aria-label="Unsere Stärken">
+            <h3>Unser Paradigma</h3>
+            <ul class="about__list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span><strong>Flexibilität</strong> – kurze Wege, direkt anspruchsvoll erreichbar</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span><strong>Dynamik</strong> – moderne Methoden statt Altlasten</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span><strong>Unabhängigkeit</strong> – kein Hersteller, kein Vertrieb</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                <span><strong>Pragmatik</strong> – jede Entscheidung mit Zahlen begründet</span>
+              </li>
+            </ul>
+            <a class="btn btn--primary" href="#kontakt">Referenzen persönlich besprechen</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Kontakt ===== -->
+    <section class="section section--tint" id="kontakt">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="eyebrow">Kontakt</p>
+            <h2>Lassen Sie uns über Ihre IT sprechen.</h2>
+            <p>
+              Ob Lizenzkosten-Analyse, Migration oder individuelle Software:
+              Erzählen Sie uns kurz von Ihrem Vorhaben – wir melden uns
+              schnellstmöglich zurück.
+            </p>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 21s7-5.1 7-11a7 7 0 1 0-14 0c0 5.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/>
+                  </svg>
+                </span>
+                <div>
+                  <small>Adresse</small>
+                  <span class="txt">Allendestraße 68, 98574 Schmalkalden</span>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/>
+                  </svg>
+                </span>
+                <div>
+                  <small>Telefon</small>
+                  <a href="tel:+493683798194">+49 3683 798 194</a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>
+                  </svg>
+                </span>
+                <div>
+                  <small>E-Mail</small>
+                  <a href="mailto:wuerfl@it-wuerfl.de">wuerfl@it-wuerfl.de</a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <span class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
+                  </svg>
+                </span>
+                <div>
+                  <small>Erreichbarkeit</small>
+                  <span class="txt">Mo–Fr, 8–17 Uhr · Support 24/7</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form-status" id="form-status" role="status"></div>
+            <div class="field-row">
+              <div class="field">
+                <label for="cf-name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input id="cf-name" name="name" type="text" placeholder="Ihr Name" required>
+              </div>
+              <div class="field">
+                <label for="cf-company">Unternehmen</label>
+                <input id="cf-company" name="company" type="text" placeholder="Firmenname">
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-email">E-Mail <span class="req" aria-hidden="true">*</span></label>
+              <input id="cf-email" name="email" type="email" placeholder="name@firma.de" required>
+            </div>
+            <div class="field">
+              <label for="cf-topic">Thema</label>
+              <select id="cf-topic" name="topic">
+                <option value="beratung">IT-Beratung / Lizenzkosten</option>
+                <option value="migration">Open-Source-Migration</option>
+                <option value="virtualisierung">Virtualisierung / Server-Konsolidierung</option>
+                <option value="entwicklung">Softwareentwicklung</option>
+                <option value="sicherheit">IT-Sicherheit</option>
+                <option value="schulung">Schulung</option>
+                <option value="sonstiges">Sonstiges</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="cf-message">Ihre Nachricht <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="cf-message" name="message" placeholder="Worum geht es? Was möchten Sie erreichen?" required></textarea>
+            </div>
+            <div class="field">
+              <label class="check">
+                <input id="cf-ds" type="checkbox" required>
+                <span>Ich habe die <a href="datenschutz.html">Hinweise zum Datenschutz</a> gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage zu. <span class="req" aria-hidden="true">*</span></span>
+              </label>
+            </div>
+            <button class="btn btn--primary" type="submit" style="width:100%;justify-content:center">
+              Nachricht senden
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <p class="form-note">
+              Alternativ direkt per E-Mail: <a href="mailto:wuerfl@it-wuerfl.de">wuerfl@it-wuerfl.de</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="#top" style="margin-bottom:1rem">
+            <svg class="brand__mark" viewBox="0 0 100 106" aria-hidden="true">
+              <path class="cube__face cube__face--top" d="M50 8 88 28 50 48 12 28Z"/>
+              <path class="cube__face cube__face--left" d="M50 48 12 28 12 68 50 88Z"/>
+              <path class="cube__face cube__face--right" d="M50 48 88 28 88 68 50 88Z"/>
+              <path class="cube__line" d="M50 8 88 28 88 68 50 88 12 68 12 28Z M50 48V88 M12 28 50 48 88 28"/>
+            </svg>
+            <span class="brand__text">WÜRFL<small>Informationstechnik</small></span>
+          </a>
+          <p style="margin-top:1rem;max-width:20rem">
+            IT-Dienstleistungen mit ingenieurmäßigem Anspruch:
+            Beratung, Open Source, Entwicklung und Betrieb –
+            pragmatisch und ideologiefrei.
+          </p>
+        </div>
+        <div>
+          <h4>Leistungen</h4>
+          <ul class="footer__list">
+            <li><a href="#leistungen">IT-Beratung &amp; Controlling</a></li>
+            <li><a href="#leistungen">Open-Source-Migration</a></li>
+            <li><a href="#leistungen">Virtualisierung</a></li>
+            <li><a href="#leistungen">Softwareentwicklung</a></li>
+            <li><a href="#leistungen">IT-Sicherheit</a></li>
+            <li><a href="#leistungen">Schulungen</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul class="footer__list">
+            <li>Allendestraße 68, 98574 Schmalkalden</li>
+            <li><a href="tel:+493683798194">+49 3683 798 194</a></li>
+            <li><a href="mailto:wuerfl@it-wuerfl.de">wuerfl@it-wuerfl.de</a></li>
+            <li><a href="#kontakt">Nachricht schreiben</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Informationstechnik Würfl · Alle Rechte vorbehalten</span>
+        <nav class="footer__legal" aria-label="Rechtliches">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="agb.html">AGB</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

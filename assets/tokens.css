@@ -1,0 +1,39 @@
+/* tokens.css — Design-Tokens für it-wuerfl.de */
+
+:root {
+  /* Typografie */
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Fläche */
+  --bg: #f5f6fb;
+  --surface: #ffffff;
+  --lav-wash: #eef0fa;
+  --lav-soft: #dfe2f8;
+
+  /* Text */
+  --ink: #23253a;
+  --ink-soft: #5d6179;
+  --ink-faint: #8b8fa8;
+
+  /* Linie */
+  --line: #e1e3f1;
+  --line-soft: #ebeef7;
+
+  /* Marke */
+  --primary: #5b5cd6;
+  --primary-deep: #4345b4;
+  --lavender: #8f95ec;
+  --lavender-soft: #c3c7f4;
+
+  /* Effekte */
+  --shadow-sm: 0 1px 2px rgba(35, 37, 58, 0.05), 0 2px 8px rgba(35, 37, 58, 0.05);
+  --shadow-md: 0 2px 6px rgba(35, 37, 58, 0.05), 0 12px 32px rgba(67, 69, 180, 0.10);
+  --shadow-lg: 0 4px 12px rgba(35, 37, 58, 0.06), 0 24px 64px rgba(67, 69, 180, 0.14);
+
+  /* Form */
+  --radius: 14px;
+  --radius-lg: 20px;
+  --container: 1120px;
+}

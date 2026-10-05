@@ -1,0 +1,76 @@
+/* pages.css — Rechts-/Infoseiten */
+
+.page {
+  padding: clamp(3.5rem, 7vw, 5.5rem) 0 4rem;
+}
+
+.page__head {
+  max-width: 44rem;
+  margin-bottom: 2.5rem;
+}
+
+.page__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-bottom: 1.8rem;
+}
+
+.page__back:hover {
+  color: var(--primary);
+}
+
+.page__back svg {
+  width: 16px;
+  height: 16px;
+}
+
+.prose {
+  max-width: 44rem;
+  color: var(--ink-soft);
+  font-size: 0.97rem;
+}
+
+.prose h2 {
+  font-size: 1.25rem;
+  color: var(--ink);
+  margin: 2.2rem 0 0.8rem;
+}
+
+.prose h2:first-child {
+  margin-top: 0;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 1rem 1.3rem;
+  list-style: disc;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose .block {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0;
+}
+
+.prose .block p:last-child {
+  margin-bottom: 0;
+}
