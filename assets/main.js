@@ -34,6 +34,39 @@
     onScroll();
   }
 
+  /* KI-Hinweis (Terminal-Popup) */
+  var aiHint = document.getElementById('ai-hint');
+  var aiPop = document.getElementById('ai-pop');
+  if (aiHint && aiPop) {
+    var closeAiPop = function () {
+      aiPop.classList.remove('is-open');
+      aiPop.setAttribute('aria-hidden', 'true');
+      aiHint.setAttribute('aria-expanded', 'false');
+    };
+
+    aiHint.addEventListener('click', function () {
+      var open = aiPop.classList.toggle('is-open');
+      aiPop.setAttribute('aria-hidden', open ? 'false' : 'true');
+      aiHint.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        aiHint.focus({ preventScroll: true });
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (aiPop.classList.contains('is-open') && !aiPop.contains(e.target) && !aiHint.contains(e.target)) {
+        closeAiPop();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && aiPop.classList.contains('is-open')) {
+        closeAiPop();
+        aiHint.focus({ preventScroll: true });
+      }
+    });
+  }
+
   /* Scroll-Reveal */
   var revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {

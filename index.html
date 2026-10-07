@@ -20,18 +20,24 @@
   <!-- ===== Navigation ===== -->
   <header class="nav" id="top">
     <div class="container nav__inner">
-      <a class="brand" href="#top" aria-label="Informationstechnik Würfl – zum Seitenanfang">
-        <svg class="brand__mark" viewBox="0 0 100 106" role="img" aria-label="WÜRFL Logo: isometrischer Würfel">
-          <path class="cube__face cube__face--top" d="M50 8 88 28 50 48 12 28Z"/>
-          <path class="cube__face cube__face--left" d="M50 48 12 28 12 68 50 88Z"/>
-          <path class="cube__face cube__face--right" d="M50 48 88 28 88 68 50 88Z"/>
-          <path class="cube__line" d="M50 8 88 28 88 68 50 88 12 68 12 28Z M50 48V88 M12 28 50 48 88 28"/>
-          <circle class="cube__dot" cx="50" cy="8" r="3.2"/>
-          <circle class="cube__dot" cx="88" cy="28" r="3.2"/>
-          <circle class="cube__dot" cx="50" cy="48" r="3.2"/>
-        </svg>
-        <span class="brand__text">WÜRFL<small>Informationstechnik</small></span>
-      </a>
+      <div class="nav__brand">
+        <a class="brand" href="#top" aria-label="Informationstechnik Würfl – zum Seitenanfang">
+          <svg class="brand__mark" viewBox="0 0 100 106" role="img" aria-label="WÜRFL Logo: isometrischer Würfel">
+            <path class="cube__face cube__face--top" d="M50 8 88 28 50 48 12 28Z"/>
+            <path class="cube__face cube__face--left" d="M50 48 12 28 12 68 50 88Z"/>
+            <path class="cube__face cube__face--right" d="M50 48 88 28 88 68 88 88Z"/>
+            <path class="cube__line" d="M50 8 88 28 88 68 88 88 12 68 12 28Z M50 48V88 M12 28 50 48 88 28"/>
+            <circle class="cube__dot" cx="50" cy="8" r="3.2"/>
+            <circle class="cube__dot" cx="88" cy="28" r="3.2"/>
+            <circle class="cube__dot" cx="50" cy="48" r="3.2"/>
+          </svg>
+          <span class="brand__text">WÜRFL<small>Informationstechnik</small></span>
+        </a>
+        <button class="nav__ai" id="ai-hint" aria-expanded="false" aria-controls="ai-pop">
+          <span class="nav__ai-dot" aria-hidden="true"></span>
+          100&nbsp;% lokale KI
+        </button>
+      </div>
 
       <nav class="nav__links" id="nav-links" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
@@ -43,6 +49,21 @@
       <button class="nav__burger" id="nav-burger" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
         <span></span>
       </button>
+    </div>
+
+    <div class="ai-pop" id="ai-pop" role="region" aria-hidden="true">
+      <div class="ai-pop__bar" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span class="ai-pop__title">wuerfl@it-wuerfl: ~</span>
+      </div>
+      <pre class="ai-pop__body" aria-hidden="true"><span class="ai-pop__cmd">$ wuerfl --ki</span>
+&gt; 100 % mit lokaler KI generiert
+&gt; LLM:    Qwen 3.8 (IQ4-quantisiert)
+&gt; Stack:  llama.cpp + opencode
+&gt; GPU:    Radeon 7800 XT 16 GB (gfx1101)
+&gt; OS:     Gentoo
+&gt; Zeit:   wenige Minuten<span class="ai-pop__cursor">▮</span></pre>
+      <span class="ai-pop__sr">Diese Seite wurde zu 100&nbsp;% mit lokaler KI generiert: mit einem lokalen LLM (Qwen 3.8, IQ4-quantisiert) in wenigen Minuten unter Linux mit llama.cpp und opencode. Als Hardware dient eine 16-GB-Radeon-7800-XT (gfx1101). OS: Gentoo.</span>
     </div>
   </header>
 
