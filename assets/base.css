@@ -32,6 +32,14 @@ video {
   max-width: 100%;
 }
 
+.ic {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  margin-right: 0.4em;
+}
+
 a {
   color: var(--primary);
   text-decoration: none;
