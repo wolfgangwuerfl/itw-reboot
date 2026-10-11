@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.it-wuerfl\.de [NC]
+RewriteRule ^ https://it-wuerfl.de%{REQUEST_URI} [R=301,L]
