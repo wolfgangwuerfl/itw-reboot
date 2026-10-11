@@ -257,47 +257,6 @@ h3 {
   color: var(--ink-faint);
 }
 
-.footer__ai {
-  margin: 1.5rem 0;
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--ink-faint);
-}
-
-.footer__ai summary {
-  display: inline-block;
-  cursor: pointer;
-  opacity: 0.75;
-  list-style: none;
-  transition: opacity 0.15s ease;
-}
-
-.footer__ai summary::-webkit-details-marker {
-  display: none;
-}
-
-.footer__ai summary::before {
-  content: "+";
-  display: inline-block;
-  margin-right: 0.45em;
-  transition: transform 0.15s ease;
-}
-
-.footer__ai[open] summary,
-.footer__ai summary:hover {
-  opacity: 1;
-}
-
-.footer__ai[open] summary::before {
-  transform: rotate(45deg);
-}
-
-.footer__ai p {
-  margin: 0.4rem auto 0;
-  max-width: 46rem;
-  line-height: 1.5;
-}
-
 .footer__legal {
   display: flex;
   gap: 1.4rem;

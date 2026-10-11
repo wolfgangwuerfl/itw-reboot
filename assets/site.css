@@ -219,14 +219,14 @@
   gap: 1.9rem;
 }
 
-.nav__links > a {
+.nav__links > a:not(.btn) {
   font-size: 0.94rem;
   font-weight: 500;
   color: var(--ink-soft);
   transition: color 0.15s ease;
 }
 
-.nav__links > a:hover {
+.nav__links > a:not(.btn):hover {
   color: var(--ink);
 }
 
@@ -756,7 +756,7 @@
     display: flex;
   }
 
-  .nav__links > a {
+  .nav__links > a:not(.btn) {
     padding: 0.85rem 0;
     font-size: 1rem;
     border-bottom: 1px solid var(--line-soft);
